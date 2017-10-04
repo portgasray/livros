@@ -1,0 +1,75 @@
+\documentclass[oneside, 12pt]{book}
+
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{titling}
+\usepackage[pagestyles]{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+
+\renewcommand{\bfseries}{}
+\setcounter{tocdepth}{0}
+
+\titleformat{\chapter}[display]{}{}{0pt}{\huge}
+\newpagestyle{mystyle}
+{\sethead{}{}{\thepage}}
+\pagestyle{mystyle}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+\title{O Caminho da Libertação}
+\subtitle{Um guia prático para a \\ Iluminação Espiritual}
+\author{Escrito por \href{www.adyashanti.org}{\textcolor{blue}{Adyashanti}}}
+\date{\textcopyright \hspace{0cm} 2012 por Adyashanti. Todos os direitos reservados. \\ \href{http://www.adyashanti.org/wayofliberation/}{ISBN: \textcolor{blue}{978-1-937195-17-5}}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{0}
+
+\chapter*{Prefácio}\addcontentsline{toc}{chapter}{Prefácio}
+\input{chs/prefacio.tex}
+
+\chapter*{Introdução}\addcontentsline{toc}{chapter}{Introdução}
+\input{chs/intro.tex}
+
+\chapter*{Os cinco fundamentos}\addcontentsline{toc}{chapter}{Os Cinco Fundamentos}
+\input{chs/ch1.tex}
+
+\chapter*{Três ideias orientadoras}\addcontentsline{toc}{chapter}{Três ideias orientadoras}
+\input{chs/ch2.tex}
+
+\chapter*{As principais práticas}\addcontentsline{toc}{chapter}{As principais práticas}
+\input{chs/ch3.tex}
+
+\chapter*{Conclusão}\addcontentsline{toc}{chapter}{Conclusão}
+\input{chs/conclusao.tex}
+
+\chapter*{Epílogo}\addcontentsline{toc}{chapter}{Epílogo}
+\input{chs/epilogo.tex}
+
+\chapter*{Sumarização dos ensinamentos}\addcontentsline{toc}{chapter}{Sumarização dos ensinamentos}
+\input{chs/sumarizacao.tex}
+
+\chapter*{Grupos de estudo}\addcontentsline{toc}{chapter}{Grupos de estudo}
+\input{chs/sumarizacao.tex}
+
+\chapter*{Leituras recomendadas}\addcontentsline{toc}{chapter}{Leituras recomendadas}
+\input{chs/sumarizacao.tex}
+
+\chapter*{Agradecimentos}\addcontentsline{toc}{chapter}{Agradecimentos}
+\input{chs/sumarizacao.tex}
+
+\chapter*{Sobre o autor}\addcontentsline{toc}{chapter}{Sobre o autor}
+\input{chs/sumarizacao.tex}
+
+\end{document}
